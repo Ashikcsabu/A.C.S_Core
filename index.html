@@ -1311,6 +1311,24 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        @media screen and (max-width: 768px) {
+            .project-section-title {
+                font-size: clamp(1.8rem, 4vw, 2.5rem); /* Reduce font size on smaller screens */
+                letter-spacing: 0.5px; /* Reduce letter spacing */
+            }
+    
+            .project-heading {
+                width: 100%; /* Allow full width on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .project-section-title {
+                font-size: clamp(1.5rem, 3.5vw, 2rem); /* Further reduce font size */
+            }
         }
 
         /* Projects Section Responsive Styles */
