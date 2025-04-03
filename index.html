@@ -627,6 +627,7 @@
         .about-text-container {
             overflow: hidden;
             max-width: 800px;
+            width: 90%;
             margin: 0 auto;
             text-align: center;
         }
@@ -643,6 +644,18 @@
         #about-text span.revealed {
             color: var(--text-light); /* Revealed color */
             opacity: 1;
+        }
+
+        @media screen and (max-width: 768px) {
+            #about-text span {
+                font-size: 1.5rem; /* Smaller font on tablets */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #about-text span {
+                font-size: 1.2rem; /* Even smaller font on mobile */
+            }
         }
 
         @keyframes pulse-button {
